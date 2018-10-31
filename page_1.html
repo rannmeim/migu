@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP价值评估系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/page_1.css">
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ 
+
+</head>
+<body>
+    <div class="header">
+        <h1>IP价值评估系统</h1>
+    </div>
+    <div class="content">
+        <div class="container flow">
+            <div class="step col-md-2">
+                <span class="circle">1</span>
+                <span>填写IP信息</span>
+            </div>
+            <div class="line col-md-3"><hr></div>
+            <div class="step col-md-2">
+                <span class="circle">2</span>
+                <span>抓取网络信息</span>
+            </div>
+            <div class="line col-md-3"><hr></div>
+            <div class="step col-md-2">
+                <span class="circle">3</span>
+                <span>输出分析结果</span>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="ip_background">
+                <h2>IP背景输入</h2>
+                <span>IP名称：</span><input type="text" placeholder="IP名称" autofocus="true">
+                <br>
+                <span>导演信息：</span><input type="text" placeholder="导演名">
+                <br>
+                <input type="text" placeholder="导演历史作品以及播放量">
+                <br>
+                <input type="text" placeholder="近五年获奖项目与级别">
+                <br>
+                <span>演员信息：</span><input type="text" placeholder="演员名"> <input type="text" placeholder="演员相关信息，例如获奖信息"> <button>add</button>
+                <br>
+                <span>国别：</span>
+                <br>
+                <span>上映日期：</span>
+                <br>
+                <span>发行方/公司：</span>
+                <input type="text" placeholder="发行方/公司名称">
+                <input type="text" placeholder="发行方/公司相关信息，例如历史作品数量与评分">
+                <br>
+                <span>制片方：</span>
+                <input type="text" placeholder="请输入制片方名称">
+                <input type="text" placeholder="请输入制片方相关信息，例如历史作品数量与评分">
+                <br>
+                <span>投资金额：</span>
+                <input type="number" placeholder="请输如阿拉伯数字，单位万元"><span>万元</span>
+            </div>
+            <div class="ip_detail">
+                <h2>IP内容输入</h2>
+                <span>影视类型/题材：</span><input type="text" placeholder="请选择影视题材，或直接输入">
+                <br>
+                <span>文学作品改编：</span><input id="is_adapted" type="radio" name="adapted" value="1"><label for="is_adapted"><span>是</span></label>
+                <input id="not_adapted" type="radio" name="adapted" value="0"><label for="not_adapted"><span>否</span></label>
+                <br>
+                <span>剧情文本：</span>
+                <input type="file">
+                <input type="text" placeholder="请输入剧情文本简介，也可一键导入剧情文档">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
