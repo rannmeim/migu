@@ -29,6 +29,9 @@ $('input[type="month"]').on('change', function(){
         $(this).css('color', 'rgba(74,74,74,1)');
     }
 })
-$('select').on("change",function(){
-    $('.select_input').val($(this).val());
+$('.select_nation').on("change",function(){
+    $('.nation_input').val($(this).val());
+})
+$('.select_theme').on("change",function(){
+    $('.theme_input').val($(this).val());
 })

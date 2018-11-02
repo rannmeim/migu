@@ -45,19 +45,19 @@
 				<h2 class="subheader">IP背景输入</h2>
 				<div class="content">
 					<div class="row">
-						<span class="title">IP名称：</span> <input class="long_width" type="text" placeholder="请输入IP名称" autofocus="true">
+						<span class="title">IP名称：</span> <input value="延禧攻略" class="long_width" type="text" placeholder="请输入IP名称" autofocus="true">
 					</div>
 					<div class="row">
-						<span class="title">导演信息：</span> <input class="short_width" type="text" placeholder="导演名">
+						<span class="title">导演信息：</span> <input value="惠楷栋" class="short_width" type="text" placeholder="导演名">
 					</div>
 					<div class="row actor_row">
-						<span class="title">演员信息：</span> <input class="short_width" type="text" placeholder="演员名">&nbsp;&nbsp;<img class="icon_add"
+						<span class="title">演员信息：</span> <input value="吴谨言" class="short_width" type="text" placeholder="演员名">&nbsp;&nbsp;<img class="icon_add"
 						 src="static/img/Combined Shape.svg" alt="">
 					</div>
 					<div class="row">
 						<span class="title">国别：</span>
 						<div class="wrap_select">
-							<select class="select short_width">
+							<select class="select_nation short_width">
 								<option value="中国">中国</option>
 								<option value="美国">美国</option>
 								<option value="日本">日本</option>
@@ -66,33 +66,45 @@
 								<option value="法国">法国</option>
 								<option value="意大利">意大利</option>
 							</select>
-							<input type="text" id="input" name="input" class="select_input" placeholder="请选择国别">
+							<input value="大陆" type="text" id="input" name="input" class="select_input nation_input" placeholder="请选择国别">
 						</div>
 					</div>
 
 					<div class="row">
-						<span class="title">上映日期：</span> <input class="short_width" type="month">
+						<span class="title">上映日期：</span> <input value="2018-06" class="short_width" type="month">
 
 					</div>
 					<div class="row">
-						<span class="title">发行方/公司：</span> <input class="long_width" type="text" placeholder="发行方/公司名称">
+						<span class="title">发行方/公司：</span> <input value="东阳欢娱影视文化有限公司" class="long_width" type="text" placeholder="发行方/公司名称">
 					</div>
 					<div class="row">
-						<span class="title">制片方：</span> <input class="long_width" type="text" placeholder="请输入制片方名称">
+						<span class="title">制片方：</span> <input value="东阳欢娱影视文化有限公司" class="long_width" type="text" placeholder="请输入制片方名称">
 					</div>
 					<div class="row">
-						<span class="title">投资金额：</span> <input class="short_width" type="number" placeholder="请输如阿拉伯数字">&nbsp;&nbsp;<span>万元</span>
+						<span class="title">投资金额：</span> <input value="30000" class="short_width" type="number" placeholder="请输如阿拉伯数字">&nbsp;&nbsp;<span>万元</span>
 					</div>
 				</div>
 
 				<h2 class="subheader">IP内容输入</h2>
 				<div class="content">
 					<div class="row">
-						<span class="title">影视类型/题材：</span> <input class="long_width" type="text" placeholder="请选择影视题材，或者直接输入">
+						<span class="title">影视题材：</span>
+						<div class="wrap_select">
+							<select class="select_theme long_width">
+								<option value="科幻">科幻</option>
+								<option value="喜剧">喜剧</option>
+								<option value="爱情">爱情</option>
+								<option value="奇幻">奇幻</option>
+								<option value="动作">动作</option>
+								<option value="剧情">剧情</option>
+							</select>
+							<input value="古装" type="text" id="input" name="input" class="select_input theme_input" placeholder="请选择影视题材，或者直接输入">
+						</div>
 					</div>
+
 					<div class="row">
 						<span class="title">文学作品改编：</span>
-						<input id="is_adapted" type="radio" name="adapted" value="1">
+						<input id="is_adapted" type="radio" name="adapted" value="1" checked=true>
 						<label for="is_adapted"><span>&nbsp;是</span></label>
 						&nbsp;&nbsp;&nbsp;&nbsp;
 						<input id="not_adapted" type="radio" name="adapted" value="0">
@@ -100,7 +112,8 @@
 					</div>
 					<div class="row">
 						<span class="title" style="vertical-align: top;">剧情文本：</span>
-						<textarea class="long_width" name="" id="" cols="30" rows="10" placeholder="请输入剧情文本简介，或者选择一键导入剧情文档"></textarea>
+						<textarea class="long_width" name="" id="" cols="30" rows="10" placeholder="请输入剧情文本简介，或者选择一键导入剧情文档">乾隆六年，少女魏璎珞为寻求长姐死亡真相，入紫禁城为宫女。璎珞经过调查，证实姐姐之死与荒唐王爷弘昼有关，立志要讨回公道。富察皇后娴于礼法，担心璎珞走上歧途，竭力给予她温暖与帮助。在皇后的悉心教导下，魏璎珞一步步成长为正直坚强的宫廷女官，并放下怨恨、认真生活。皇后不幸崩逝，令璎珞对乾隆误会重重，二人从互相敌视到最终彼此理解、互相扶持。璎珞凭勇往直前的勇气、机敏灵活的头脑、宽广博大的胸怀，化解宫廷上下的重重困难，最终成为襄助乾隆盛世的令贵妃。
+						</textarea>
 						<a href="javascript:;" class="upload">
 							<input type="file" name="" id="">一键导入Word格式文档
 						</a>

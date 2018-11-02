@@ -4,14 +4,15 @@
   left: 0;
 }
 .wrap {
-  min-width: 1250px;
+  width: 1440px;
+  position: relative;
 }
 .nav_bg {
   position: fixed;
   top: 0;
   left: 0;
   height: 100px;
-  width: 19.23%;
+  width: 280px;
   min-width: 240px;
   background: -webkit-linear-gradient(315deg, #4ec0f7 0%, #377bc5 100%);
   background: -o-linear-gradient(315deg, #4ec0f7 0%, #377bc5 100%);
@@ -23,7 +24,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 19.23%;
+  width: 280px;
   text-align: center;
 }
 .nav {
@@ -52,6 +53,9 @@
   width: 25px;
   height: 25px;
 }
+.step_name {
+  vertical-align: middle;
+}
 .v_line {
   width: 2px;
   height: 110px;
@@ -63,7 +67,7 @@
 }
 .top_box {
   float: right;
-  width: calc(100% - 19.23%);
+  width: 1160px;
   position: relative;
   height: 80px;
   background: #ffffff;
@@ -81,7 +85,7 @@
 }
 .wrap_main {
   float: right;
-  width: calc(100% - 19.23%);
+  width: 1160px;
   padding-top: 40px;
 }
 .main_box {
